@@ -1,0 +1,17 @@
+version: '3'
+services:
+  victim:
+    build: "./User authnetication"
+    container_name: victim_app
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./User authnetication:/app"
+    environment:
+      - FLASK_ENV=development
+    networks:
+      - victim_network
+
+networks:
+  victim_network:
+    driver: bridge
