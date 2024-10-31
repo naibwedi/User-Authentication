@@ -10,7 +10,7 @@ services:
     volumes:
       - .:/app
     environment:
-      - FLASK_ENV=development
+      - FLASK_DEBUG=1
     networks:
       - victim_network
 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Scan this QR Code with your TOTP app</h2>
+    <img src="data:image/png;base64,{{ qr_code }}" alt="TOTP QR Code" class="qr-code">
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Go back to Home</a>
+</div>
+</body>
+</html>

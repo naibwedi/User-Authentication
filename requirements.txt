@@ -1,4 +1,10 @@
 Flask==2.2.2
+Flask-Migrate==4.0.4  # Example version
 Flask-SQLAlchemy==3.0.0
 SQLAlchemy==1.4.48  # Downgrade to SQLAlchemy 1.4.x
 Werkzeug==2.2.3
+Flask-Bcrypt==1.0.1
+Flask-Limiter==3.6.0
+pyotp==2.8.0
+qrcode[pil]==7.4.2
+requests==2.28.1

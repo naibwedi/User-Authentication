@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container-box">
+    <h2>Login</h2>
+    <form method="POST" class="form">
+        <input type="text" name="username" placeholder="Username" class="form-control" required>
+        <input type="password" name="password" placeholder="Password" class="form-control" required>
+        <input type="text" name="totp_code" placeholder="TOTP Code" class="form-control" required>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Go back to Home</a>
+</div>
+</body>
+</html>
