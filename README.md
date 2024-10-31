@@ -10,7 +10,7 @@ OAuth2 Implementation: Authorization Code Flow for OAuth2 support, enabling secu
 
 #Project Structure
 
-```
+```php
 User Authentication/
 ├── .venv/                  # Virtual environment files
 ├── static/                 # Static assets (CSS, JS)
